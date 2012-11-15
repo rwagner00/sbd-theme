@@ -1,0 +1,58 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* line 5, ../sass/global.scss */
+#page {
+  background: url('../images/bg-blue-texture.png?1352738275');
+  font-family: Helvetica,Arial,sans-serif !important;
+}
+/* line 8, ../sass/global.scss */
+#page h1, #page h2, #page h3, #page h4, #page h5, #page p {
+  font-family: Helvetica,Arial,sans-serif !important;
+}
+
+/* line 15, ../sass/global.scss */
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner, .region-content-inner,
+.region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner {
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 12px 12px 12px 12px;
+  border: 10px solid #044a75;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 25, ../sass/global.scss */
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner,
+.region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner {
+  margin: 10px 0;
+}
+
+/* line 30, ../sass/global.scss */
+.view-services .views-row {
+  width: 98%;
+  margin: 10px 1%;
+  float: left;
+}
+/* line 34, ../sass/global.scss */
+.view-services .views-row .field-name-field-image {
+  float: left;
+  margin: 5px 10px;
+}
+/* line 38, ../sass/global.scss */
+.view-services .views-row .links {
+  float: right;
+}
+
+/* line 46, ../sass/global.scss */
+.node-service-page .field-name-field-image {
+  float: left;
+  margin: 5px 10px;
+}
+
+/* line 53, ../sass/global.scss */
+.node-webform {
+  font-size: 110%;
+}
+/* line 55, ../sass/global.scss */
+.node-webform input {
+  max-width: 100%;
+}

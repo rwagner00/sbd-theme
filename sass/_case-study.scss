@@ -1,0 +1,51 @@
+
+.page-node .node-case-study {
+  .field-name-field-screenshot {
+    float: left;
+    margin-right: 15px;
+    max-width: 65%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .field-name-field-testimonial {
+    padding-top: 10px;
+    .field-label {
+      font-size: 125%;
+    }
+  }
+
+  .field-name-field-website {
+    clear: both;
+    margin-bottom: 15px;
+    font-size: 150%;
+  }
+
+  .field-name-body {
+    .field-label {
+      font-size: 150%;
+    }
+  }
+}
+
+.view-portfolio {
+  .node-case-study {
+    padding: 5px;
+    border: 3px inset #044A75;
+    background-color: #033452;
+  }
+  .node-title {
+    margin-bottom: 15px;
+    padding: 0 5px;
+    // @include background-with-css2-fallback(linear-gradient(rgb(255,255,255), rgb(251,251,251)));
+    @include box-shadow(5px 5px 2px rgba(0,0,0, 0.5));
+    background-color: rgb(250, 250, 250);
+    //@include border-radius(15px 15px);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    @include box-shadow(5px 5px 2px rgba(0,0,0, 0.5));
+  }
+}

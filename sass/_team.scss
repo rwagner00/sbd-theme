@@ -1,0 +1,58 @@
+
+
+//All Team member pages & About Us Page
+.node-type-team-member, .page-node-1 {
+  .region-preface-second-inner {
+    border: none;
+    background-color: transparent;
+    @include box-shadow(none);
+    .field-name-field-picture {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: url("../images/desaturate.svg#greyscale");
+      @include transition(filter, 1s);  
+
+      &.active {
+        filter: none;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+        filter: none;
+      }
+    }
+  }
+}
+
+
+  //Just the block configuration
+#block-views-the-team-block {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  header {
+    display: none;
+  }
+  .block-inner {
+    text-align: center;
+    .content {
+      display: inline-block;
+      zoom:1;
+      *display:inline;
+      .views-row {
+        float: left;
+        margin: 0 15px;
+        .node-title {
+          font-size: 110%;
+          margin-bottom: 0;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

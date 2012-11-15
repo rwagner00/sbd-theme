@@ -1,0 +1,58 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import "compass";
+
+#page {
+  @include background(image-url('bg-blue-texture.png'));
+  font-family: Helvetica,Arial,sans-serif !important;
+  h1, h2, h3, h4, h5, p {
+  font-family: Helvetica,Arial,sans-serif !important;
+  }
+}
+
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner,  .region-content-inner, 
+  .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner
+{
+  padding: 5px 15px;  
+  background-color: white;
+  border-radius: 12px 12px 12px 12px;
+  border: 10px solid rgb(4, 74, 117);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner, 
+  .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner
+{
+  margin: 10px 0;
+}
+
+.view-services {
+  .views-row {
+    width: 98%;
+    margin: 10px 1%;
+    float: left;
+    .field-name-field-image {
+      float: left;
+      margin: 5px 10px;
+    }
+    .links {
+      float: right;
+    }
+  }
+}
+
+// Actual Service node page.
+.node-service-page {
+  .field-name-field-image {
+    float: left;
+    margin: 5px 10px;
+  }
+}
+
+
+.node-webform {
+  font-size: 110%;  
+  input {
+    max-width: 100%;
+  }
+}
