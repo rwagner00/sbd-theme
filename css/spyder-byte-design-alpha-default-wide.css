@@ -1,1 +1,12 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+/* line 4, ../sass/spyder-byte-design-alpha-default-wide.scss */
+#page #page-title {
+  width: 106%;
+  margin-left: -3%;
+}
+
+/* line 12, ../sass/spyder-byte-design-alpha-default-wide.scss */
+.front #block-views-front-page-drop-block-block .node-title {
+  width: 110%;
+  margin-left: -5%;
+}

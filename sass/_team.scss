@@ -31,7 +31,7 @@
   //Just the block configuration
 #block-views-the-team-block {
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   header {
     display: none;
   }
@@ -43,7 +43,7 @@
       *display:inline;
       .views-row {
         float: left;
-        margin: 0 15px;
+        margin: 0 10px;
         .node-title {
           font-size: 110%;
           margin-bottom: 0;

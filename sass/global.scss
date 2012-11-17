@@ -8,24 +8,124 @@
   h1, h2, h3, h4, h5, p {
   font-family: Helvetica,Arial,sans-serif !important;
   }
+    .node-links ul li a, .comment-links ul li a {
+    text-transform: lowercase;
+    display: block;
+    float: inline-block;
+    }
+  .site-name {
+    text-align: center;
+    margin-bottom: 10px;
+    a {
+      color: rgb(0, 25, 55);
+      &:hover {
+        color: darken(green, 20%);
+      }
+      &:active {
+        color: lighten(green, 20%);
+      }
+    }
+  }
+
+  .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
+    width: 60px;
+  }
+
+  #zone-postscript-second-wrapper {
+    @include background(image-url('grass.png'));
+    min-height: 70px;
+  } 
+  #zone-footer-wrapper {
+    @include background(image-url('dirt.png'));
+    position: relative;
+    z-index: 2;
+    background-repeat: repeat;
+    min-height: 150px;
+  }
 }
 
-.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner,  .region-content-inner, 
-  .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner
+#page-title {
+  @include box-shadow(8px 8px 4px rgba(0,0,0,.5));
+  background-color: rgb(142, 199, 74);
+}
+.node-title {
+  background-color: rgb(93, 44, 15);
+  a {
+    color: white;
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      color: rgb(142, 199, 74);
+    }
+  }
+}
+
+.node-title, #page-title {
+  text-align: center;
+  a {
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.front {
+  .node-title {
+    background-color: rgb(142, 199, 74);
+    a {
+      color: black;
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        color: rgb(93, 44, 15);
+      }
+    }
+  }
+  .region-preface-second-inner {
+    display: none;
+  }
+  .views-row {
+    border-bottom: 4px solid #044A75;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &.views-row-last {
+      border-bottom: none;
+    }
+  }
+}
+
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner,  .region-content-inner, .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner, .region-sidebar-second .block, .region-sidebar-first .block
 {
-  padding: 5px 15px;  
+  padding: 5px 15px;
   background-color: white;
   border-radius: 12px 12px 12px 12px;
   border: 10px solid rgb(4, 74, 117);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+  .block {
+    margin-bottom: 20px;
+  }
+  .block-title {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+  }
+
 }
 
-.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner, 
-  .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner
+.region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner, .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner 
 {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
+// Actual Service node page.
+.node-service-page {
+  .field-name-field-image {
+    float: left;
+    margin: 5px 10px;
+  }
+}
+//Services view
 .view-services {
   .views-row {
     width: 98%;
@@ -41,18 +141,76 @@
   }
 }
 
-// Actual Service node page.
-.node-service-page {
-  .field-name-field-image {
-    float: left;
-    margin: 5px 10px;
-  }
-}
 
 
+//Contact form, though will apply to any webforms.
 .node-webform {
   font-size: 110%;  
   input {
     max-width: 100%;
   }
 }
+
+//Blog content type styling
+.node-blog {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #upper, #middle, #bottom {
+    clear: both;
+  }
+
+  .field-name-field-top-left-image, .field-name-field-middle-left-image, .field-name-field-bottom-left-image {
+    float: left;
+    max-width: 20%;
+    margin: 10px;
+  }
+
+  .field-name-body, .field-name-field-middle-content, .field-name-field-bottom-content {
+    padding-top: 10px;
+  }
+
+  .field-name-field-top-right-image, .field-name-field-middle-right-image, .field-name-field-bottom-right-image {
+    float: right;
+    max-width: 20%;
+    margin: 10px;
+  }
+}
+
+//Portfolio Styling
+
+.page-portfolio {
+  #page-title {
+    display: none;
+  }
+  .region-content-inner {
+    border: none;
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+}
+
+.view-portfolio {
+  .node-case-study {
+    padding: 5px;
+    border: 3px inset #044A75;
+    background-color: #033452;
+    border-radius: 7px;
+  }
+  .node-title {
+    @include box-shadow(5px 5px 2px rgba(0,0,0, 0.5));
+    margin-bottom: 8px;
+    padding: 0 5px;
+    background-color: rgb(250, 250, 250);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    @include box-shadow(5px 5px 2px rgba(0,0,0, 0.5));
+  }
+}
+
+
+@import 'team';

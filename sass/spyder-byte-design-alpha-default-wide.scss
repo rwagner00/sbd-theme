@@ -1,1 +1,17 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+#page {
+  #page-title {
+    width: 106%;
+    margin-left: -3%;
+  } 
+}
+
+.front {
+  #block-views-front-page-drop-block-block {
+    .node-title {
+      width: 110%;
+      margin-left: -5%;
+    }
+  }
+}

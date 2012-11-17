@@ -1,3 +1,14 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/* line 6, ../sass/spyder-byte-design-alpha-default-normal.scss */
+#page #page-title {
+  width: 108%;
+  margin-left: -4%;
+}
+
+/* line 14, ../sass/spyder-byte-design-alpha-default-normal.scss */
+.front #block-views-front-page-drop-block-block .node-title {
+  width: 114%;
+  margin-left: -7%;
+}
