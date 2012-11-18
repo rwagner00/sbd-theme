@@ -28,7 +28,14 @@
       background-size: 100% auto;
       background-repeat: no-repeat;
       background-position: center bottom;
-      padding: 15px 20px;
+      padding: 20px 20px;
+      &:hover {
+        @include background(image-url('menu-underline-mouseover.png'));
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+
     }
     a {
       color: rgb(0, 54, 89);
@@ -53,23 +60,25 @@
 .front {
   #zone-preface-wrapper {
     @include background(image-url('house.png'));
-    // @include background(image-url('house_half-size.png'));
     background-position: left bottom;
     background-repeat: no-repeat;
     height: 290px;
   }
   #zone-content-wrapper {
     @include background(image-url('house-slice.png'));
-    // @include background(image-url('house-slice_half-size.png'));
     background-position: left;
-    position: relative;
-    z-index: 2;
     background-repeat: repeat-y;
     min-height: 100px;
+    #zone-content {
+      
+    position: relative;
+    z-index: 2;
+    }
   }
   #zone-postscript-wrapper {
     @include background(image-url('house-slice.png'));
-    // @include background(image-url('house-slice_half-size.png'));
+    // position: relative;
+    margin-top: -1px;
     background-attachment: left;
     background-repeat: repeat-y;
     min-height: 1px;
@@ -120,7 +129,7 @@
     background-repeat: no-repeat;
     #zone-preface {
       @include background(image-url('cloud-header.png'));
-      min-height: 134px;
+      min-height: 170px;
       background-size: 100% auto;
       background-repeat:no-repeat;
       background-position: center center;
@@ -244,7 +253,7 @@
 
 .node-webform {
   #webform-component-image {
-    @include background(image-url('500x500.gif'));
+    @include background(image-url('contact-spider.png'));
     background-size: 100% auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -268,10 +277,29 @@
     margin-bottom: 15px;
   }
 }
-
+.node-type-team-member, .page-node-1 {
+  .region-preface-second-inner {
+    .field-name-field-picture {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: url("../images/desaturate.svg#greyscale");
+      @include transition(filter, 1s);  
+      &.active {
+        filter: none;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+        filter: none;
+      }
+    }
+  }
+}
 //Content Specific CSS
 //@import 'blog';
 @import 'case-study';
-// @import 'team';
 @import 'service';
 //END Content Specific CSS

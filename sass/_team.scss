@@ -6,24 +6,6 @@
     border: none;
     background-color: transparent;
     @include box-shadow(none);
-    .field-name-field-picture {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: url("../images/desaturate.svg#greyscale");
-      @include transition(filter, 1s);  
-
-      &.active {
-        filter: none;
-        -webkit-filter: none;
-        -moz-filter: none;
-        -ms-filter: none;
-        -o-filter: none;
-        filter: none;
-      }
-    }
   }
 }
 

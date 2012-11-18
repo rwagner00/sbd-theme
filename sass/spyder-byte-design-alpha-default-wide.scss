@@ -1,5 +1,5 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
-
+@import "compass";
 #page {
   #page-title {
     width: 106%;
@@ -10,8 +10,21 @@
 .front {
   #block-views-front-page-drop-block-block {
     .node-title {
-      width: 110%;
-      margin-left: -5%;
+      width: 116%;
+      margin-left: -8%;
     }
   }
+  .region-content {
+    .node-title, .block-title {
+      width: 108%;
+      margin-left: -4%;
+    }
+  }
+  .block-title {
+    text-align: center;
+    width: 117%;
+    margin-left: -8.5%;
+    @include box-shadow(6px 6px 3px rgba(0, 0, 0, 0.5));
+  }
 }
+

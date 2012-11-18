@@ -9,6 +9,23 @@
 
 /* line 14, ../sass/spyder-byte-design-alpha-default-normal.scss */
 .front #block-views-front-page-drop-block-block .node-title {
-  width: 114%;
-  margin-left: -7%;
+  width: 120%;
+  margin-left: -10%;
+  -webkit-box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 21, ../sass/spyder-byte-design-alpha-default-normal.scss */
+.front .region-content .node-title, .front .region-content .block-title {
+  width: 111%;
+  margin-left: -5.5%;
+}
+/* line 26, ../sass/spyder-byte-design-alpha-default-normal.scss */
+.front .block-title {
+  text-align: center;
+  width: 122%;
+  margin-left: -11%;
+  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
 }

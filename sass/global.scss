@@ -8,7 +8,11 @@
   h1, h2, h3, h4, h5, p {
   font-family: Helvetica,Arial,sans-serif !important;
   }
-    .node-links ul li a, .comment-links ul li a {
+  #page-title {
+    @include box-shadow(8px 8px 4px rgba(0,0,0,.5));
+    background-color: rgb(142, 199, 74);
+  }
+  .node-links ul li a, .comment-links ul li a {
     text-transform: lowercase;
     display: block;
     float: inline-block;
@@ -26,7 +30,9 @@
       }
     }
   }
-
+  .block {
+    margin-bottom: 20px;
+  }
   .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
     width: 60px;
   }
@@ -36,18 +42,38 @@
     min-height: 70px;
   } 
   #zone-footer-wrapper {
-    @include background(image-url('dirt.png'));
+    @include background(image-url('dirt.png') rgb(55,23,6));
     position: relative;
     z-index: 2;
-    background-repeat: repeat;
-    min-height: 150px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    min-height: 168px;
+    padding-top: 20px;
+    .block {
+      
+      .block-title {
+        @include box-shadow(6px 6px 3px rgba(0,0,0,0.5));
+        background-color: rgb(142, 199, 74);
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0;
+      }
+      .content {
+        padding: 10px;
+        color: #FFF;
+        a {
+          color: #FFF;
+          &:hover {
+            color: rgb(142, 199, 74);
+          }
+        } 
+      }
+    }
   }
 }
 
-#page-title {
-  @include box-shadow(8px 8px 4px rgba(0,0,0,.5));
-  background-color: rgb(142, 199, 74);
-}
+
 .node-title {
   background-color: rgb(93, 44, 15);
   a {
@@ -70,8 +96,9 @@
 }
 
 .front {
-  .node-title {
+  .node-title, .block-title {
     background-color: rgb(142, 199, 74);
+    border-bottom: none !important;
     a {
       color: black;
       &:visited {
@@ -102,6 +129,7 @@
   border-radius: 12px 12px 12px 12px;
   border: 10px solid rgb(4, 74, 117);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 
   .block {
     margin-bottom: 20px;
@@ -110,7 +138,6 @@
     border-bottom: 2px solid black;
     margin-bottom: 10px;
   }
-
 }
 
 .region-preface-first-inner, .region-preface-second-inner, .region-preface-third-inner, .region-postscript-first-inner, .region-postscript-second-inner, .region-postscript-third-inner 
@@ -204,6 +231,13 @@
     margin-bottom: 8px;
     padding: 0 5px;
     background-color: rgb(250, 250, 250);
+    line-height: 1.2em;
+    a {
+      color: rgb(142, 199, 74);
+      &:hover {
+        color: rgb(93, 44, 15);
+      }
+    }
   }
   img {
     max-width: 100%;

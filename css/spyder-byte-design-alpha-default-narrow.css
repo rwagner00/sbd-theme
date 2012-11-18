@@ -10,6 +10,23 @@
 
 /* line 15, ../sass/spyder-byte-design-alpha-default-narrow.scss */
 .front #block-views-front-page-drop-block-block .node-title {
-  width: 120%;
-  margin-left: -10%;
+  width: 128%;
+  margin-left: -14%;
+  -webkit-box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 22, ../sass/spyder-byte-design-alpha-default-narrow.scss */
+.front .region-content .node-title, .front .region-content .block-title {
+  width: 114%;
+  margin-left: -7%;
+}
+/* line 27, ../sass/spyder-byte-design-alpha-default-narrow.scss */
+.front .block-title {
+  text-align: center;
+  width: 132%;
+  margin-left: -16%;
+  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
 }

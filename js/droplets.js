@@ -40,9 +40,10 @@ jQuery(document).ready(function($) {
     //4s after page load, and immediately after drops stop, grass grows over 1.5s.
     $('#zone-postscript-second-wrapper').delay(4000).animate({top: '0'}, 1500);
     //5.5s after page load, immediately after grass stops, content div shows over 1s.
+    $('.region-sidebar-second-inner').hide().delay(5500).slideDown(1500);
     $('.region-content-inner').hide().delay(5500).slideDown(1500);
     
-    
+    // .region-content-inner
     //Hide all nodes other than about us.
     $("#node-page-2").hide();
     $("#node-page-3").hide();
